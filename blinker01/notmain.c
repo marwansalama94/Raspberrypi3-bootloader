@@ -22,10 +22,10 @@ int notmain ( void )
     unsigned int ra;
     unsigned int rb;
 
-    ra=GET32(GPFSEL2);
-    ra&=~(7<<3);
-    ra|=1<<3;
-    PUT32(GPFSEL2,ra);
+//    ra=GET32(GPFSEL2);
+//    ra&=~(7<<3);
+//    ra|=1<<3;
+    PUT32(GPFSEL2,8);
 
     uart_init();
 
